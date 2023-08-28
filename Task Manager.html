@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+  <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#task-container {
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color:skyblue;
+}
+
+#task-form {
+    display: flex;
+    align-items: center;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-task-btn {
+    padding: 0.5rem 1rem;
+    background-color:pink;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#task-list{
+    color:black;
+}
+  </style>
+</head>
+  
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <main>
+        <div id="task-container">
+          hello ! Here is your tasks :
+            <ul id="task-list"></ul>
+        </div>
+        <div id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button id="add-task-btn">Add</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
